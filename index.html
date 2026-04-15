@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       margin: 0;
@@ -28,18 +30,23 @@
     nav a {
       margin: 0 20px;
       text-decoration: none;
-      font-size: 15.5px;
+      font-size: 16px;
       letter-spacing: 2px;
       font-weight: 600;
+    }
+
+    nav.transparent a {
       color: white;
-      cursor: pointer;
     }
 
     nav.scrolled {
       background: black;
     }
 
-    /* LOGO */
+    nav.scrolled a {
+      color: white;
+    }
+
     .logo {
       display: block;
       margin: 0 auto 10px;
@@ -77,24 +84,6 @@
       margin-bottom: 20px;
     }
 
-    h3 {
-      margin-top: 40px;
-    }
-
-    p {
-      margin-bottom: 18px;
-    }
-
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-
-    img {
-      max-width: 100%;
-      margin: 20px 0;
-    }
-
     /* FOUNDER */
     .founder {
       display: flex;
@@ -103,6 +92,7 @@
 
     .founder img {
       width: 320px;
+      height: auto;
     }
 
     /* VIDEO */
@@ -136,148 +126,166 @@
 
     /* MOBILE */
     @media (max-width: 700px) {
-      .hero h1 { font-size: 40px; }
-      .founder { flex-direction: column; }
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .founder {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<nav id="navbar">
-  <img src="Pass+the+Mic-logo2-white.webp" class="logo">
-  <div>
-    <a onclick="scrollToSection('home')">HOME</a>
-    <a onclick="scrollToSection('about')">ABOUT</a>
-    <a onclick="scrollToSection('projects')">PROJECTS</a>
-    <a onclick="scrollToSection('contact')">CONTACT</a>
-  </div>
-</nav>
-
-<!-- HERO -->
-<div id="home" class="hero">
-  <h1>PASS THE MIC MEDIA</h1>
-</div>
-
-<!-- ABOUT -->
-<section id="about">
-
-  <h2>The Work</h2>
-
-  <p>
-    There is a yearning for stories of all genres that reflect the rich experience of all people—it has never been more pronounced. Pass the Mic Media is a production and consulting outfit designed to meet that need. We bring a level of conscious thought and decision making to ensure production is inclusive and equitable and content is responsibly researched and portrayed. Whether advising on a script in development or the hiring and training of teams coming to work on a project, thoughtful consideration at each phase is great for the story and for your bottom line.
-  </p>
-
-  <h2>Maha Chehlaoui</h2>
-
-  <div class="founder">
-    <img src="Maha+Headshot.webp">
+  <!-- NAV -->
+  <nav class="transparent" id="navbar">
+    <img src="Pass+the+Mic-logo2-white.webp" class="logo">
 
     <div>
-      <p>
-        I am a producer, consultant and facilitator with over 20 years experience in film, theater and finance. I have a long history of building inclusive teams and spaces through a lens of cross cultural understanding and a keen understanding of the artistic process.
-      </p>
-
-      <p>
-        I began as a theater artist in New York. In the aftermath of 9/11, I felt driven to identify and nourish a Middle Eastern theater community. I learned how to identify artists, tell nuanced, difficult stories for mixed audiences, and build pipelines for both creation and distribution that centered on quality AND equality.
-      </p>
-
-      <p>
-        In 2010, I co-founded Noor Theatre, and in 2016 we received an OBIE award recognizing our work "...to change the dialogue. To engage, enlighten, as well as entertain, while shining a light on a culture that most Americans know only through media stereotypes."
-      </p>
-
-      <p>
-        I remain dedicated to engaging, enlightening and entertaining. Creating space for underrepresented artists is my passion. Ensuring the entire scaffolding supports their work is central to my mission: identifying ways to tell great stories and create that structural change needed for all of us to thrive.
-      </p>
-
-      <p>
-        This is more than just fleeting moments of shared experience between artists and audiences. It can be long term, sustainable power sharing opportunities for people who are too often left out of "the room where it happens."
-      </p>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
     </div>
+  </nav>
+
+  <!-- HERO -->
+  <div id="home" class="hero">
+    <h1>PASS THE MIC MEDIA</h1>
   </div>
 
-</section>
+  <!-- ABOUT -->
+  <section id="about">
 
-<!-- PROJECTS -->
-<section id="projects">
+    <h2>The Work</h2>
 
-  <h2>Projects</h2>
+    <p>
+      There is a yearning for stories of all genres that reflect the rich experience of all people—it has never been more pronounced.
+      Pass the Mic Media is a production and consulting outfit designed to meet that need.
+      We bring a level of conscious thought and decision making to ensure production is inclusive and equitable and content is responsibly researched and portrayed.
+      Whether advising on a script in development or the hiring and training of teams coming to work on a project, thoughtful consideration at each phase is great for the story and for your bottom line.
+    </p>
 
-  <h3>JO (2017) with PlayMountain Productions</h3>
-  <p>
-    In 1980's Woodstock, NY, a 13-year old girl reluctantly prepares for her Bat Mitzvah, but an unexpected encounter with a local girl sends this rite of passage in an unorthodox direction. Written & directed by Justine Wolf Williams. Full length feature currently in development.
-  </p>
-  <img src="jo-001-hires_orig.webp">
+    <h2>Founder: Maha Chehlaoui</h2>
 
-  <h3>BROTHERS (2018) with MMP</h3>
-  <p>
-    A Muslim Arab boy realizes he is different, and his older brother learns to stand by him. Written & directed by Mike Mosallam (Breaking Fast, All-American Muslim), this short film sheds light on LGBT issues in a familial, religious space as yet not portrayed on screen.
-  </p>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/RtQj1QTUahU" allowfullscreen></iframe>
-  </div>
+    <div class="founder">
+      <img src="Maha+Headshot.webp">
 
-  <h3>UBUNTU (2018) with MMP and MPAC</h3>
-  <p>
-    UBUNTU is a coming of age story that follows Hakeem & Darren, best friends and star athletes navigating high school. When pushed to face their individual fears, Hakeem and Darren realize that staying true to themselves while supporting one another is what matters. Written by Adel Kamal and directed by Aqsa Altaf, winners of the MMP/MPAC Fellowship for Muslim Filmmakers.
-  </p>
-  <div class="video">
-    <iframe src="https://www.youtube.com/embed/EL31xJJvKi8" allowfullscreen></iframe>
-  </div>
+      <div>
+        <p>I am a producer, consultant and facilitator with over 20 years experience in film, theater and finance. I have a long history of building inclusive teams and spaces through a lens of cross cultural understanding and a keen understanding of the artistic process.</p>
 
-</section>
+        <p>I began as a theater artist in New York. In the aftermath of 9/11, I felt driven to identify and nourish a Middle Eastern theater community. I learned how to identify artists, tell nuanced, difficult stories for mixed audiences, and build pipelines for both creation and distribution that centered on quality AND equality.</p>
 
-<!-- CONTACT -->
-<section id="contact">
+        <p>In 2010, I co-founded Noor Theatre, and in 2016 we received an OBIE award recognizing our work "...to change the dialogue. To engage, enlighten, as well as entertain, while shining a light on a culture that most Americans know only through media stereotypes."</p>
 
-  <h2>Learn More and Contact Us</h2>
+        <p>I remain dedicated to engaging, enlightening and entertaining. Creating space for underrepresented artists is my passion. Ensuring the entire scaffolding supports their work is central to my mission: Identifying ways to tell great stories and create that structural change needed for all of us to thrive.</p>
 
-  <p>There are a variety of ways we can partner:</p>
+        <p>This is more than just fleeting moments of shared experience between artists and audiences. It can be long term, sustainable power sharing opportunities for people who are too often left out of "the room where it happens."</p>
+      </div>
+    </div>
 
-  <ul>
-    <li>Script development through a specific lens</li>
-    <li>Production centered on supporting underrepresented stories</li>
-    <li>Team Training: ensure your work environment is optimized</li>
-    <li>Speaker Sourcing: A large rolodex of experts across multiple fields and identities</li>
-  </ul>
+  </section>
 
-  <p>Download the one-sheet below for more in depth services.</p>
+  <!-- PROJECTS -->
+  <section id="projects">
 
-  <p>
-    And reach out! If we can’t help, we probably know someone who can! We look forward to connecting with you. And also consider signing up for our mailing list above. We promise to stay relevant and considerate of your time and inbox!
-  </p>
+    <h2>Projects</h2>
 
-  <form action="https://formspree.io/f/YOUR-ID" method="POST">
-    <input name="first" placeholder="First Name" required>
-    <input name="last" placeholder="Last Name" required>
-    <input type="email" name="email" placeholder="Email Address" required>
-    <textarea name="message" placeholder="Message" required></textarea>
-    <button type="submit">Submit</button>
-  </form>
+    <p><strong>JO (2017) with PlayMountain Productions</strong></p>
+    <p>
+      In 1980's Woodstock, NY, a 13-year old girl reluctantly prepares for her Bat Mitzvah, but an unexpected encounter with a local girl sends this rite of passage in an unorthodox direction.
+      Written & directed by Justine Wolf Williams. Full length feature currently in development.
+    </p>
 
-</section>
+    <img src="jo-001-hires_orig.webp">
 
-<!-- SCRIPT -->
-<script>
-const nav = document.getElementById("navbar");
+    <p><strong>BROTHERS (2018) with MMP</strong></p>
+    <p>
+      A Muslim Arab boy realizes he is different, and his older brother learns to stand by him.
+      Written & directed by Mike Mosallam (Breaking Fast, All-American Muslim), this short film sheds light on LGBT issues in a familial, religious space as yet not portrayed on screen.
+    </p>
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    nav.classList.add("scrolled");
-  } else {
-    nav.classList.remove("scrolled");
-  }
-});
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/RtQj1QTUahU" allowfullscreen></iframe>
+    </div>
 
-function scrollToSection(id) {
-  const el = document.getElementById(id);
-  const offset = 160;
-  const y = el.getBoundingClientRect().top + window.pageYOffset - offset;
+    <p><strong>UBUNTU (2018) with MMP and MPAC</strong></p>
+    <p>
+      UBUNTU is a coming of age story that follows Hakeem & Darren, best friends and star athletes navigating high school.
+      When pushed to face their individual fears, Hakeem and Darren realize that staying true to themselves while supporting one another is what matters.
+      Written by Adel Kamal and directed by Aqsa Altaf.
+    </p>
 
-  window.scrollTo({ top: y, behavior: "smooth" });
-}
-</script>
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/EL31xJJvKi8" allowfullscreen></iframe>
+    </div>
+
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+
+    <h2>Learn More and Contact Us</h2>
+
+    <p>There are a variety of ways we can partner:</p>
+
+    <ul>
+      <li>Script development through a specific lens</li>
+      <li>Production centered on supporting underrepresented stories</li>
+      <li>Team Training: ensure your work environment is optimized</li>
+      <li>Speaker Sourcing: A large rolodex of experts across multiple fields and identities</li>
+    </ul>
+
+    <p>Download the one-sheet below for more in depth services.</p>
+
+    <p>
+      And reach out! If we can’t help, we probably know someone who can!
+      We look forward to connecting with you.
+      And also consider signing up for our mailing list above.
+      We promise to stay relevant and considerate of your time and inbox!
+    </p>
+
+    <form action="https://formspree.io/f/YOUR-ID" method="POST">
+      <input name="first" placeholder="First Name" required>
+      <input name="last" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+
+  </section>
+
+  <!-- SCRIPT (THIS FIXES YOUR SCROLL ISSUE) -->
+  <script>
+    const nav = document.getElementById("navbar");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 100) {
+        nav.classList.remove("transparent");
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.add("transparent");
+        nav.classList.remove("scrolled");
+      }
+    });
+
+    const OFFSET = 160;
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        const top = target.getBoundingClientRect().top + window.pageYOffset - OFFSET;
+
+        window.scrollTo({
+          top: top,
+          behavior: "smooth"
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
